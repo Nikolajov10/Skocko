@@ -130,7 +130,7 @@ $(document).ready(function() {
             if (turn==0) {
                 if (!vreme1) {
                     crtajResenja();
-                    alert("Pobednik je Igrac 2");
+                    alert("Winner is player 2");
                     Restart();
                     return;
                 }
@@ -140,7 +140,7 @@ $(document).ready(function() {
             else {
                 if (!vreme2) {
                     crtajResenja();
-                    alert("Pobednik je Igrac 1");
+                    alert("Winner is player 1");
                     Restart();
                     return;
                 }
@@ -203,8 +203,8 @@ $(document).ready(function() {
                 komb2=[];
                 if (pokusaji2==7 || pobeda){
                     zapoceto=false;   
-                    let string="Nereseno!";
-                if (pobeda) string="Pobednik je igrac 2!";
+                    let string="DRAW!";
+                if (pobeda) string="Winner is player 2!";
                 kraj=true;
                 crtajResenja();
                 setTimeout(function() {alert(string);},1000)
